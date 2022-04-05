@@ -1,0 +1,247 @@
+electricblue:
+  ### Created by: moosedookie, April 2022, https://github.com/moosedookie/Electric-Blue
+
+  ### BACKGROUND IMG ###
+  lovelace-background: center / cover no-repeat url("/local/backgrounds/electricblue.jpg") fixed
+
+  ### VARIABLES ###
+  # Dark Colors
+  dark-primary-color: "#007AFF"
+  dark-secondary-color: "#4DA3FF"
+  dark-background-color: "#141A32"
+  dark-transparent-primary: "rgba(0, 0, 0, 0.85)"
+  dark-divider-color: "#3B4C8B"
+
+  dark-unique-color: "#ab70fe"
+  dark-unique-alt: "#6a3079"
+  dark-disabled-color: "#4F5F78"
+  dark-state-active: "#FBCD41"
+  dark-label-yellow: "#dca304"
+  dark-label-red: "#94261d"
+
+  dark-white-tone: "#fcfcfc"
+  dark-black-tone: "#140a19"
+
+  # Light Colors
+  light-primary-color: "#007AFF"
+  light-secondary-color: "#4DA3FF"
+  light-background-color: "#fccccc"
+  light-transparent-primary: "rgba(115, 42, 23, 0.1)"
+
+  light-unique-color: "#ab70fe"
+  light-unique-alt: "#6a3079"
+  light-disabled-color: "#6a3079"
+  light-state-active: "#ab70fe"
+  light-label-yellow: "#dca304"
+  light-label-red: "#94261d"
+
+  light-white-tone: "#fcfcfc"
+  light-black-tone: "#140a19"
+
+  # Other Colors
+  true-white: "#ffffff"
+  true-black: "#000000"
+  transparent-black: "rgba(0, 0, 0, 0.85)"
+  transparent-white: "rgba(255, 220, 220, 0.15)"
+
+
+  ### THEME
+  modes:
+    ## DARK THEME / DARK MODE
+    dark:
+      ### Header ###
+      app-header-background-color: var(--dark-black-tone)
+
+      ### Fonts ###
+      primary-font-family: "ProximaNova-Regular,Raleway,Roboto,sans-serif"
+      paper-font-common-base_-_font-family: var(--primary-font-family)
+      paper-font-common-code_-_font-family: var(--primary-font-family)
+      paper-font-body1_-_font-family: var(--primary-font-family)
+      paper-font-subhead_-_font-family: var(--primary-font-family)
+      paper-font-headline_-_font-family: var(--primary-font-family)
+      paper-font-caption_-_font-family: var(--primary-font-family)
+      paper-font-title_-_font-family: var(--primary-font-family)
+      ha-card-header-font-family: var(--primary-font-family)
+
+      ### Main Interface Colors ###
+      primary-color: var(--dark-primary-color)
+      light-primary-color: var(--dark-secondary-color)
+      card-background-color: var(--dark-transparent-primary)
+      primary-background-color: var(--app-header-background-color)
+      secondary-background-color: var(--dark-background-color)
+      divider-color: var(--dark-divider-color)
+      accent-color: var(--light-primary-color)
+      markdown-code-background-color: var(--light-secondary-color)
+      unique-color: var(--dark-unique-color)
+
+      ### Text ###
+      primary-text-color: var(--true-white)
+      secondary-text-color: var(--light-primary-color)
+      text-primary-color: var(--primary-text-color)
+      disabled-text-color: var(--dark-disabled-color)
+
+      ### Sidebar Menu ###
+      sidebar-icon-color: var(--dark-divider-color)
+      sidebar-text-color: var(--true-white)
+      sidebar-selected-background-color: var(--primary-background-color)
+      sidebar-selected-icon-color: var(--light-primary-color)
+      sidebar-selected-text-color: var(--sidebar-selected-icon-color)
+      sidebar-background-color: var(--primary-background-color)
+
+      ### HACS ###
+      hcv-color-new: var(--dark-primary-color)
+
+      ### States and Badges ###
+      state-icon-color: var(--primary-color)
+      state-icon-active-color: var(--dark-state-active)
+      state-icon-unavailable-color: var(--disabled-text-color)
+
+      ### Sliders ###
+      paper-slider-knob-color: var(--primary-color)
+      paper-slider-knob-start-color: var(--paper-slider-knob-color)
+      paper-slider-pin-color: var(--paper-slider-knob-color)
+      paper-slider-active-color: var(--paper-slider-knob-color)
+      paper-slider-secondary-color: var(--light-primary-color)
+
+      ### Labels ###
+      label-badge-background-color: var(--markdown-code-background-color)
+      label-badge-text-color: var(--primary-text-color)
+      label-badge-red: var(--dark-label-red)
+      label-badge-yellow: "var(--dark-label-yellow)"
+
+      ### Cards ###
+      ha-card-border-radius: "10px"
+      ha-card-background: var(--transparent-black)
+      paper-card-header-color: var(--primary-text-color)
+      paper-card-background-color: var(--ha-card-background)
+      paper-listbox-background-color: var(--primary-background-color)
+
+      ### Toggles ###
+      paper-toggle-button-checked-button-color: var(--dark-white-tone)
+      paper-toggle-button-checked-bar-color: var(--light-primary-color)
+      paper-toggle-button-unchecked-button-color: var(--paper-toggle-button-checked-button-color)
+      paper-toggle-button-unchecked-bar-color: var(--dark-unique-alt)
+
+      ### Table row ###
+      table-row-background-color: var(--primary-background-color)
+      table-row-alternative-background-color: var(--primary-background-color)
+      data-table-background-color: var(--primary-background-color)
+
+      ### Switches ###
+      #switch-checked-button-color:
+      switch-unchecked-button-color: var(--divider-color)
+      switch-unchecked-track-color: var(--divider-color)
+
+      # Media Player
+      mini-media-player-icon-color: var(--primary-color)
+      mini-media-player-accent-color: var(--primary-color)
+      mini-media-player-progress-height: "8px"
+
+      # Energy Panel
+      energy-grid-consumption-color: "#488fc2"
+      energy-grid-return-color: "#8353d1"
+      energy-solar-color: "#ff9800"
+      energy-non-fossil-color: "#0f9d58"
+      energy-battery-out-color: "#4db6ac"
+      energy-battery-in-color: "#f06292"
+      energy-gas-color: "#8E021b"
+
+
+    ## LIGHT THEME / LIGHT MODE
+    light:
+      ### Header ###
+      app-header-background-color: var(--light-white-tone)
+
+      ### Fonts ###
+      primary-font-family: "ProximaNova-Regular,Raleway,Roboto,sans-serif"
+      paper-font-common-base_-_font-family: var(--primary-font-family)
+      paper-font-common-code_-_font-family: var(--primary-font-family)
+      paper-font-body1_-_font-family: var(--primary-font-family)
+      paper-font-subhead_-_font-family: var(--primary-font-family)
+      paper-font-headline_-_font-family: var(--primary-font-family)
+      paper-font-caption_-_font-family: var(--primary-font-family)
+      paper-font-title_-_font-family: var(--primary-font-family)
+      ha-card-header-font-family: var(--primary-font-family)
+
+      ### Main Interface Colors ###
+      primary-color: var(--light-primary-color)
+      light-primary-color: var(--light-secondary-color)
+      card-background-color: var(--light-transparent-primary)
+      primary-background-color: var(--app-header-background-color)
+      secondary-background-color: var(--light-background-color)
+      divider-color: var(--light-primary-color)
+      accent-color: var(--light-primary-color)
+      markdown-code-background-color: var(--light-secondary-color)
+      unique-color: var(--light-unique-color)
+
+      ### Text ###
+      primary-text-color: var(--true-black)
+      secondary-text-color: var(--light-primary-color)
+      text-primary-color: var(--primary-text-color)
+      disabled-text-color: var(--light-disabled-color)
+
+      ### Sidebar Menu ###
+      sidebar-icon-color: var(--light-primary-color)
+      sidebar-text-color: var(--true-black)
+      sidebar-selected-background-color: var(--primary-background-color)
+      sidebar-selected-icon-color: var(--light-primary-color)
+      sidebar-selected-text-color: var(--sidebar-selected-icon-color)
+      sidebar-background-color: var(--primary-background-color)
+
+      ### HACS ###
+      hcv-color-new: var(--light-primary-color)
+
+      ### States and Badges ###
+      state-icon-color: var(--primary-color)
+      state-icon-active-color: var(--light-state-active)
+      state-icon-unavailable-color: var(--disabled-text-color)
+
+      ### Sliders ###
+      paper-slider-knob-color: var(--primary-color)
+      paper-slider-knob-start-color: var(--paper-slider-knob-color)
+      paper-slider-pin-color: var(--paper-slider-knob-color)
+      paper-slider-active-color: var(--paper-slider-knob-color)
+      paper-slider-secondary-color: var(--light-primary-color)
+
+      ### Labels ###
+      label-badge-background-color: var(--markdown-code-background-color)
+      label-badge-text-color: var(--primary-text-color)
+      label-badge-red: var(--light-label-red)
+      label-badge-yellow: "var(--light-label-yellow)"
+
+      ### Cards ###
+      ha-card-border-radius: "10px"
+      ha-card-background: var(--transparent-white)
+      paper-card-header-color: var(--primary-text-color)
+      paper-card-background-color: var(--ha-card-background)
+      paper-listbox-background-color: var(--primary-background-color)
+
+      ### Toggles ###
+      paper-toggle-button-checked-button-color: var(--light-white-tone)
+      paper-toggle-button-checked-bar-color: var(--light-primary-color)
+      paper-toggle-button-unchecked-button-color: var(--paper-toggle-button-checked-button-color)
+      paper-toggle-button-unchecked-bar-color: var(--light-unique-alt)
+
+      ### Table row ###
+      table-row-background-color: var(--primary-background-color)
+      table-row-alternative-background-color: var(--primary-background-color)
+      data-table-background-color: var(--primary-background-color)
+
+      ### Switches ###
+      #switch-checked-button-color:
+      switch-unchecked-button-color: var(--divider-color)
+      switch-unchecked-track-color: var(--divider-color)
+
+      # Media Player
+      mini-media-player-icon-color: var(--primary-color)
+      mini-media-player-accent-color: var(--primary-color)
+      mini-media-player-progress-height: "8px"
+
+      # Energy Panel
+      energy-grid-consumption-color: "#488fc2"
+      energy-grid-return-color: "#8353d1"
+      energy-solar-color: "#ff9800"
+      energy-non-fossil-color: "#0f9d58"
+      energy-battery-out-color: "#4db6ac"
+      energy-battery-in-color: "#f06292"
+      energy-gas-color: "#8E021b"
